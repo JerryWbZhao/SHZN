@@ -33,7 +33,7 @@ fp = open(filename, 'wb')
 
 runner =HTMLTestRunner.HTMLTestRunner(
     stream=fp,
-    title=u'BingoTalk测试报告',
+    title=u'神华准能测试报告',
     description=u'报告描述')
 
 runner.run(suite)
