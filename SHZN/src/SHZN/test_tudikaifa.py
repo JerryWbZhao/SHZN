@@ -34,17 +34,21 @@ class tudikaifa(unittest.TestCase):
         #进入剥离排土一张图
         driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[1]").click()        
         time.sleep(3)
+        driver.find_element_by_xpath("//*[@id='layui-layer1']/span[1]/a[3]").click()
+        time.sleep(3)
         #进入排土场现状管理
         driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[2]").click()        
         time.sleep(3)
-        driver.find_element_by_xpath("//*[@id='layui-layer1']/span[1]/a[3]").click()
+        driver.find_element_by_xpath("//*[@id='layui-layer2']/span[1]/a[3]").click()
         time.sleep(3)
         #进入土地开发进程管理
         driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[3]").click()        
         time.sleep(3)
-        #进入土地复垦关联分析
-        driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[4]").click()        
+        driver.find_element_by_xpath("//*[@id='layui-layer3']/span[1]/a[3]").click()
         time.sleep(3)
+        #进入土地复垦关联分析
+        #driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[4]").click()        
+        #time.sleep(3)
         driver.close()
         
     def tearDown(self):

@@ -26,7 +26,7 @@ class yizhangtu(unittest.TestCase):
         u"""一张图用例"""
         driver = self.driver
         driver.get(self.base_url)
-        time.sleep(3)      
+        time.sleep(5)      
         driver.switch_to.frame('aa101531289117000001')       
         time.sleep(3)       
         driver.find_element_by_xpath("/html/body/div/div/section/aside/div/div/div/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/div/div").click()        

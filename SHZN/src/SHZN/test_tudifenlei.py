@@ -30,20 +30,25 @@ class tudifenlei(unittest.TestCase):
         #进入土地分类             
         driver.find_element_by_xpath("//*[@id='app']/div/div/div[1]/div[2]/ul/li[2]").click()        
         time.sleep(3)
-        #进入土地利用现状
+        #进入行政地区管理
         driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[1]").click()        
         time.sleep(3)
         driver.find_element_by_xpath("//*[@id='layui-layer1']/span[1]/a[3]").click()
         time.sleep(3)
-        #进入宗地区域管理
+        #进入露天矿区管理
         driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[2]").click()        
         time.sleep(3)
         driver.find_element_by_xpath("//*[@id='layui-layer2']/span[1]/a[3]").click()
         time.sleep(3)
-        #进入行政地区管理
+        #进入配套设施管理
         driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[3]").click()        
         time.sleep(3)
         driver.find_element_by_xpath("//*[@id='layui-layer3']/span[1]/a[3]").click()
+        time.sleep(3)
+        #进入土地利用现状
+        driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/ul/li[4]").click()        
+        time.sleep(3)
+        driver.find_element_by_xpath("//*[@id='layui-layer4']/span[1]/a[3]").click()
         time.sleep(3)
         driver.close()
         
